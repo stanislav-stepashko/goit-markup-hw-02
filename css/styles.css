@@ -272,7 +272,6 @@ address {
 } */
 .address-list-item:hover {
   text-decoration: underline;
-  color-scheme: #;
 }
 /* .footer-contacts-item {
   margin-left: 215px;
@@ -465,7 +464,6 @@ address {
 }
 .partfolio-point-map {
   font-family: Roboto;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -474,7 +472,6 @@ address {
 }
 .partfolio-contact-mail-footer {
   font-family: Roboto;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -488,6 +485,9 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.partfolio-address-list-item:hover {
+  text-decoration: underline;
 }
 /* .partfolio-footer-contacts-container {
   width: 1600px;
