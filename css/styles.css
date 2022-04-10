@@ -40,7 +40,7 @@ address {
 
 /* -----------------HEADER----------------- */
 
-.logo-link {
+.logo-link-header {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -181,6 +181,15 @@ address {
 
 /* -----------------FOOTER----------------- */
 
+.logo-link-footer {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration-line: none;
+  color: var(--wight-text-color)
+}
 .footer {
   background-color: var(--dark-background-color);
 }
@@ -224,7 +233,7 @@ address {
 
 /* -----------------PARTFOLIO-HEADER----------------- */
 
-.portfolio-logo-link {
+.portfolio-logo-link-header {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -303,6 +312,15 @@ address {
 
 /* -----------------PARTFOLIO-FOOTER----------------- */
 
+.portfolio-logo-link-footer {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration-line: none;
+  color: var(--wight-text-color)
+}
 .portfolio-footer {
   background-color: var(--dark-background-color);
 }
@@ -335,8 +353,8 @@ address {
   letter-spacing: 0.03em;
   color: var(--footer-contacts-color);
 }
-.portfolio-contact-number-header:hover,
-.portfolio-contact-number-header:focus {
+.portfolio-contact-number-footer:hover,
+.portfolio-contact-number-footer:focus {
   color: var(--focus-color);
 }
 .portfolio-address-list-item:hover {
