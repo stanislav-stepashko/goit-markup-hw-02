@@ -30,22 +30,29 @@ address {
   --light-text-color: #757575;
   --wight-text-color: #fff;
   --focus-color: #2196f3;
-  --main-background-color: #2f303a;
+  --dark-background-color: #2f303a;
+  --light-background-color: #F5F4FA;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
-
+.body {
+  font-family: Roboto;
+}
 
 /* -----------------HEADER----------------- */
+
 .logo-link {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-decoration-line: none;
+  color: var(--dark-text-color);
+}
+.web {
   color: var(--focus-color);
 }
 .nav-list-link {
-  font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -53,11 +60,14 @@ address {
   color: var(--dark-text-color);
 }
 .nav-list-link:hover,
-.nav-list-link:focus {
+.nav-list-link:focus,
+.nav-list-link:active {
   color: var(--focus-color);
 }
+.nav-list-link.current {
+  color: var(--focus-color)
+}
 .contact-mail-header {
-  font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -69,7 +79,6 @@ address {
   color: var(--focus-color);
 }
 .contact-number-header {
-  font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -83,22 +92,25 @@ address {
 
 /* -----------------HERO----------------- */
 
+.hero {
+  background-color: var(--dark-background-color);
+}
 .main-title {
-  font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  background-color: var(--main-background-color);
+  text-transform: uppercase;
   color: var(--wight-text-color);
 }
 .hero-btn {
-  font-family: Roboto;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
   color: var(--wight-text-color);
   background-color: var(--focus-color);
 }
@@ -110,7 +122,6 @@ address {
 /* -----------------HERO-BENEFITS----------------- */
 
 .benefits {
-  font-family: Roboto;
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 14px;
@@ -120,7 +131,6 @@ address {
   color: var(--dark-text-color);
 }
 .description-benefits {
-  font-family: Roboto;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -131,7 +141,6 @@ address {
 /* -----------------DIRECTION-ACTIVITY----------------- */
 
 .direction-activity-header {
-  font-family: Roboto;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -141,16 +150,21 @@ address {
 
 /* -----------------TEAM----------------- */
 
+.team {
+  background-color: var(--light-background-color);
+}
+.team-list-item {
+  background-color: #fff;
+}
 .team-header {
-  font-family: Roboto;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--dark-text-color);
+  background-color:
 }
 .team-member {
-  font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -158,7 +172,6 @@ address {
   color: var(--dark-text-color);
 }
 .team-position {
-  font-family: Roboto;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -169,26 +182,31 @@ address {
 /* -----------------FOOTER----------------- */
 
 .footer {
-  background-color: var(--main-background-color);
+  background-color: var(--dark-background-color);
 }
 .point-map {
-  font-family: Roboto;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--wight-text-color);
 }
+.point-map:hover,
+.point-map:focus {
+  color: var(--focus-color);
+}
 .contact-mail-footer {
-  font-family: Roboto;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-contacts-color);
 }
+.contact-mail-footer:hover,
+.contact-mail-footer:focus {
+  color: var(--focus-color);
+}
 .contact-number-footer {
-  font-family: Roboto;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -196,81 +214,86 @@ address {
   letter-spacing: 0.03em;
   color: var(--footer-contacts-color);
 }
+.contact-number-footer:hover,
+.contact-number-footer:focus {
+  color: var(--focus-color);
+}
 .address-list-item:hover {
   text-decoration: underline;
 }
 
 /* -----------------PARTFOLIO-HEADER----------------- */
 
-.partfolio-logo-link {
+.portfolio-logo-link {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--focus-color);
+  text-decoration-line: none;
+  color: var(--dark-text-color);
 }
-.partfolio-nav-list-link {
-  font-family: Roboto;
+.portfolio-nav-list-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--dark-text-color);
 }
-.partfolio-nav-list-link:hover,
-.partfolio-nav-list-link:focus {
+.portfolio-nav-list-link:hover,
+.portfolio-nav-list-link:focus,
+.portfolio-nav-list-link:active {
   color: var(--focus-color);
 }
-.partfolio-contact-mail-header {
-  font-family: Roboto;
+.portfolio-nav-list-link.current {
+  color: var(--focus-color)
+}
+.portfolio-contact-mail-header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--light-text-color);
 }
-.partfolio-contact-mail-header:hover,
-.partfolio-contact-mail-header:focus {
+.portfolio-contact-mail-header:hover,
+.portfolio-contact-mail-header:focus {
   color: var(--focus-color);
 }
-.partfolio-contact-number-header {
-  font-family: Roboto;
+.portfolio-contact-number-header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--light-text-color);
 }
-.partfolio-contact-number-header:hover,
-.partfolio-contact-number-header:focus {
+.portfolio-contact-number-header:hover,
+.portfolio-contact-number-header:focus {
   color: var(--focus-color);
 }
 
 /* -----------------PARTFOLIO-HERO----------------- */
 
-.partfolio-btn-item {
-  font-family: Roboto;
+.portfolio-btn-item {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  border: none;
+  border-radius: 4px;
 }
-.partfolio-btn-item:hover,
-.partfolio-btn-item:focus {
+.portfolio-btn-item:hover,
+.portfolio-btn-item:focus {
   background-color: var(--focus-color);
   color: var(--wight-text-color);
 }
-.partfolio-name-projects {
-  font-family: Roboto;
+.portfolio-name-projects {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--dark-text-color);
 }
-.partfolio-type-projects {
-  font-family: Roboto;
+.portfolio-type-projects {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
@@ -280,33 +303,42 @@ address {
 
 /* -----------------PARTFOLIO-FOOTER----------------- */
 
-.partfolio-footer {
-  background-color: var(--main-background-color);
+.portfolio-footer {
+  background-color: var(--dark-background-color);
 }
-.partfolio-point-map {
-  font-family: Roboto;
+.portfolio-point-map {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--wight-text-color);
 }
-.partfolio-contact-mail-footer {
-  font-family: Roboto;
+.portfolio-point-map:hover,
+.portfolio-point-map:focus {
+  color: var(--focus-color);
+}
+.portfolio-contact-mail-footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-contacts-color);
 }
-.partfolio-contact-number-footer {
-  font-family: Roboto;
+.portfolio-contact-mail-footer:hover,
+.portfolio-contact-mail-footer:focus {
+  color: var(--focus-color);
+}  
+.portfolio-contact-number-footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-contacts-color);
 }
-.partfolio-address-list-item:hover {
+.portfolio-contact-number-header:hover,
+.portfolio-contact-number-header:focus {
+  color: var(--focus-color);
+}
+.portfolio-address-list-item:hover {
   text-decoration: underline;
 }
