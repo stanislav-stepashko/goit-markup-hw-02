@@ -35,7 +35,7 @@ address {
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
 .body {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
 }
 
 /* -----------------HEADER----------------- */
@@ -131,7 +131,6 @@ address {
   color: var(--dark-text-color);
 }
 .description-benefits {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -157,7 +156,6 @@ address {
   background-color: #fff;
 }
 .team-header {
-  font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -172,7 +170,6 @@ address {
   color: var(--dark-text-color);
 }
 .team-position {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -194,7 +191,6 @@ address {
   background-color: var(--dark-background-color);
 }
 .point-map {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -205,7 +201,6 @@ address {
   color: var(--focus-color);
 }
 .contact-mail-footer {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -216,8 +211,6 @@ address {
   color: var(--focus-color);
 }
 .contact-number-footer {
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -288,6 +281,7 @@ address {
   line-height: 1.62;
   letter-spacing: 0.03em;
   border: none;
+  cursor: pointer;
   border-radius: 4px;
 }
 .portfolio-btn-item:hover,
@@ -303,7 +297,6 @@ address {
   color: var(--dark-text-color);
 }
 .portfolio-type-projects {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -325,7 +318,6 @@ address {
   background-color: var(--dark-background-color);
 }
 .portfolio-point-map {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -336,7 +328,6 @@ address {
   color: var(--focus-color);
 }
 .portfolio-contact-mail-footer {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -347,7 +338,6 @@ address {
   color: var(--focus-color);
 }  
 .portfolio-contact-number-footer {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
