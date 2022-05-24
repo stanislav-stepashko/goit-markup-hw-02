@@ -34,8 +34,10 @@ address {
   --light-background-color: #F5F4FA;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
-.body {
+body {
   font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
 }
 
 /* -----------------HEADER----------------- */
@@ -153,7 +155,7 @@ address {
   background-color: var(--light-background-color);
 }
 .team-list-item {
-  background-color: #fff;
+  background-color: var(--wight-text-color);
 }
 .team-header {
   font-size: 36px;
